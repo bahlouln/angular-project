@@ -1,0 +1,100 @@
+{
+  "products": [
+    {
+      "title": "hahaha",
+      "price": 90,
+      "description": "bbbbbbbbbb",
+      "category": "femme",
+      "image": "https://media.istockphoto.com/id/1129117534/photo/wrench-always-with-you-worker-set-up-electric-heating-boiler-at-home-bathroom.jpg?s=612x612&w=0&k=20&c=TNCvretiRzjbBJOO9sO1VVMEQpQ3fTQToEetzCCQyO0=",
+      "id": "1",
+      "isFavorite": false
+    },
+    {
+      "id": "3c8f",
+      "title": "fffffffff",
+      "price": 98,
+      "description": "fffffffffffff",
+      "category": "enfant",
+      "image": "https://media.istockphoto.com/id/1129117534/photo/wrench-always-with-you-worker-set-up-electric-heating-boiler-at-home-bathroom.jpg?s=612x612&w=0&k=20&c=TNCvretiRzjbBJOO9sO1VVMEQpQ3fTQToEetzCCQyO0=",
+      "isFavorite": false
+    },
+    {
+      "id": "0da6",
+      "title": "rrrrr",
+      "price": 50,
+      "description": "rrrrr",
+      "category": "homme",
+      "image": "https://media.istockphoto.com/id/1058477334/photo/senior-male-worker-cutting-flower-in-drawer-in-garden.jpg?s=612x612&w=0&k=20&c=CK94QGWdq_KYilczkmnZvXsSOmQgkbPtTnHmaHz0AcQ=",
+      "isFavorite": false
+    },
+    {
+      "id": "f07c",
+      "title": "ssss",
+      "price": 16,
+      "description": "dddd",
+      "category": "homme",
+      "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": "c45f",
+      "title": "hhhhh",
+      "price": 50,
+      "description": "hhhhh",
+      "category": "homme",
+      "image": "https://media.istockphoto.com/id/2023730581/photo/medical-student-looking-at-an-x-ray-at-the-hospital.jpg?s=612x612&w=0&k=20&c=Xoa4XZkWNXc3ylaAt0BJQINCrvkPPpIeK9zvOzvIsok=",
+      "isFavorite": false
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "client1",
+      "password": "client1",
+      "role": "client"
+    },
+    {
+      "id": "2",
+      "username": "client2",
+      "password": "client2",
+      "role": "client"
+    },
+    {
+      "id": "7e51",
+      "username": "sirine@gmail.com",
+      "password": "sirine123",
+      "role": "client"
+    },
+    {
+      "id": "65d3",
+      "username": "nawara@gmail.com",
+      "password": "nawara123",
+      "role": "client"
+    },
+    {
+      "id": "e7e0",
+      "username": "noussa",
+      "password": "noussa123",
+      "role": "client"
+    },
+    {
+      "id": "3909",
+      "username": "nozha",
+      "password": "nozha123",
+      "role": "client"
+    }
+  ],
+  "orders": [],
+  "carts": [
+    {
+      "id": "1",
+      "userId": 1,
+      "items": []
+    },
+    {
+      "id": "2",
+      "userId": 2,
+      "items": []
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+.confirm-dialog {
+  padding: 20px;
+  min-width: 350px;
+
+  h2 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    color: #d32f2f;
+    font-size: 24px;
+
+    .warning-icon {
+      margin-right: 10px;
+      font-size: 28px;
+      height: 28px;
+      width: 28px;
+    }
+  }
+
+  mat-dialog-content {
+    margin: 20px 0;
+    
+    p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.5;
+      color: rgba(0, 0, 0, 0.87);
+    }
+  }
+
+  mat-dialog-actions {
+    margin-bottom: 0;
+    padding: 8px 0;
+
+    button {
+      min-width: 120px;
+      margin-left: 8px;
+
+      mat-icon {
+        margin-right: 4px;
+      }
+    }
+
+    .cancel-button {
+      color: rgba(0, 0, 0, 0.87);
+    }
+
+    .confirm-button {
+      background-color: #d32f2f;
+      color: white;
+
+      &:hover {
+        background-color: #b71c1c;
+      }
+    }
+  }
+}
+
+::ng-deep .mat-dialog-container {
+  padding: 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}

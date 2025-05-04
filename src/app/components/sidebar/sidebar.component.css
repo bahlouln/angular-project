@@ -1,0 +1,95 @@
+.sidebar {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    height: 100vh;
+    width: 260px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.logo a {
+    color: #4CAF50;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.nav {
+    padding: 1rem 0;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.nav li a {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav li a:hover {
+    background-color: #e8f5e9;
+    color: #4CAF50;
+}
+
+.nav li.active a {
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(76, 175, 80, 0.4);
+}
+
+.nav li a i {
+    margin-right: 1rem;
+    font-size: 1.25rem;
+}
+
+.nav li a p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Style spécial pour le bouton de déconnexion */
+.nav li:last-child a {
+    color: #dc3545;
+    margin-top: 2rem;
+    border-top: 1px solid #e9ecef;
+    padding-top: 1rem;
+}
+
+.nav li:last-child a:hover {
+    background-color: #ffebee;
+    color: #dc3545;
+}
+
+/* Correction pour les états actifs */
+.nav li a:active,
+.nav li a:focus {
+    color: inherit;
+    background-color: inherit;
+}
+
+.nav li.active a:active,
+.nav li.active a:focus {
+    color: white;
+    background-color: #4CAF50;
+}
+
+/* Animation douce pour les transitions */
+.nav li a * {
+    transition: all 0.3s ease;
+}
+  

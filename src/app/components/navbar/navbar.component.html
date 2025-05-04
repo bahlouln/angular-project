@@ -1,0 +1,53 @@
+<nav class="navbar">
+    <div class="container-fluid">
+        <!-- Logo et titre -->
+        <div class="navbar-brand">
+            <a class="logo" routerLink="/accueil">
+                <span class="logo-text">ShopX</span>
+            </a>
+        </div>
+
+        <!-- Navigation principale -->
+        <div class="navbar-menu">
+            <ul class="nav-links">
+                <li class="nav-item">
+                    <a routerLink="/accueil" class="nav-link" routerLinkActive="active">
+                        <i class="material-icons">home</i>
+                        <span>Accueil</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/products" class="nav-link" routerLinkActive="active">
+                        <i class="material-icons">shopping_bag</i>
+                        <span>Produits</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/cart" class="nav-link" routerLinkActive="active">
+                        <i class="material-icons">shopping_cart</i>
+                        <span>Panier</span>
+                        <span class="cart-badge" *ngIf="cartItemCount > 0">{{cartItemCount}}</span>
+                    </a>
+                </li>
+            </ul>
+
+
+            <!-- Actions utilisateur -->
+            <div class="user-actions">
+                <!-- Nouveaux boutons : S'inscrire et Se connecter -->
+                <button class="action-button" routerLink="/register" matTooltip="S'inscrire">
+                    <i class="material-icons">person_add</i>
+                    <span>S'inscrire</span>
+                </button>
+                <button class="action-button" (click)="openLoginModal()" matTooltip="Se connecter">
+                    <i class="material-icons">login</i>
+                    <span>Se connecter</span>
+                </button>
+                <button class="action-button" (click)="logout()" matTooltip="Se déconnecter">
+                    <i class="material-icons">logout</i>
+                    <span>Se déconnecter</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>

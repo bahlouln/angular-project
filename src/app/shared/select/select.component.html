@@ -1,0 +1,9 @@
+<label for="" class="my-1">{{title}}</label>
+        <select class="form-control" (change)="detectChanges($event)">
+            <option value="all" selected>All</option>
+            <option value="{{option}}" *ngFor="let option of data">{{option}}</option>
+            
+        </select>
+<!-- beh lenna hazina label select mel html mte3 all products w hatineha hna w badalna filterCatgory b 
+ detectChanges bech ay select tsir yefhemha mch ken select aal category aslan hya tji erreur 
+ w title tdeclariha fel export mte3 select.module.ts si nn erreur w les methodes zeda temchy tdeclarihom f select.component.ts kima detectChanges w  fel export title w data-->

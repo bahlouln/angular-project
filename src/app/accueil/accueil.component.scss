@@ -1,0 +1,138 @@
+.home-container {
+    height: 100vh;
+    width: 100%;
+    background-image: url('/assets/img/boutique-archive.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%);
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.content {
+    max-width: 800px;
+    color: white;
+    
+    .main-title {
+        font-size: 5rem;
+        line-height: 1.1;
+        font-weight: 300;
+        letter-spacing: 4px;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+        font-family: "Playfair Display", serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .description {
+        margin: 2rem 0;
+        
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+    }
+}
+
+.shop-now-btn {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 2rem;
+
+    &:hover {
+        background: white;
+        color: black;
+        transform: translateY(-2px);
+    }
+
+    i {
+        font-size: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    &:hover i {
+        transform: translateX(5px);
+    }
+}
+
+// Animation d'entrée
+.content {
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// Responsive design
+@media (max-width: 768px) {
+    .content {
+        .main-title {
+            font-size: 3.5rem;
+        }
+
+        .description {
+            p {
+                font-size: 1.2rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        .main-title {
+            font-size: 2.5rem;
+        }
+
+        .description {
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .shop-now-btn {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+}

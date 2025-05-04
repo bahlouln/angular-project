@@ -1,0 +1,160 @@
+.main-content {
+    padding: 30px;
+    min-height: calc(100vh - 70px);
+    background-color: #f4f6f8;
+  }
+  
+  .container-fluid {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  /* Filtres */
+  .filters-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .category-filter {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .category-filter label {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 0;
+  }
+  
+  .category-filter select {
+    min-width: 200px;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+  }
+  
+  /* Conteneur de la table aligné à droite */
+.table-responsive {
+    margin: 0 10rem 0 1rem;  /* Ajuste la marge gauche pour donner plus d'espace à droite */
+    width: 100%;
+  }
+  
+  /* Table spécifique alignée à droite */
+  .table {
+    margin-left: auto;  /* Ce qui déplace la table vers la droite */
+    margin-right: 0;    /* Cela empêche une marge droite supplémentaire */
+    width: 95%;         /* Cette ligne ajuste la largeur de la table */
+  }
+  
+  .table th {
+    background-color: #f8f9fa;
+    color: #333;
+    font-weight: 600;
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 2px solid #e9ecef;
+  }
+  
+  .table td {
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+    vertical-align: middle;
+  }
+  
+  .product-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .description-content {
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .category-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    background-color: #e8f5e9;
+    color: #4CAF50;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  /* Loading et messages */
+  .loading-spinner {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .error-message {
+    color: #dc3545;
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffebee;
+    margin: 1rem;
+    border-radius: 4px;
+  }
+  
+  .no-products {
+    text-align: center;
+    padding: 3rem;
+    color: #6c757d;
+  }
+  
+  .no-products i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #4CAF50;
+  }
+  
+  /* Boutons */
+  .btn-just-icon {
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    margin: 0 3px;
+  }
+  
+  .btn-just-icon i {
+    font-size: 20px;
+    line-height: 35px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .filters-section {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .category-filter {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .description-content {
+      max-width: 150px;
+    }
+  }
+  
+  
+/* Aligner la card très à droite */
+.align-right {
+    margin-left: auto;   /* pousse sur la droite */
+    margin-right: 1rem;  /* espace minime à droite */
+    width: 80%;          /* réduit la carte à 50% de la largeur parent */
+  }

@@ -1,0 +1,96 @@
+<div class="sidebar" data-color="red" data-image=""> 
+  <app-sidebar></app-sidebar>
+  <div class="sidebar-background" style="background-image: url(assets/img/sidebar-5.jpg)"></div>
+</div>
+
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="card align-right">
+      <div class="card-header card-header-success">
+        <h4 class="card-title">Liste des Produits</h4>
+        <p class="card-category">Gérez votre catalogue de produits</p>
+      </div>
+
+      <div class="card-body">
+        <!-- Filtres -->
+        <div class="filters-section">
+          <div class="category-filter">
+            <label for="categorySelect">Filtrer par catégorie :</label>
+            <select id="categorySelect" (change)="filterByCategory($event)" class="form-control">
+              <option value="all">Toutes les catégories</option>
+              <option *ngFor="let category of categories" [value]="category">
+                {{ category }}
+              </option>
+            </select>
+          </div>
+
+          <button class="btn btn-success" routerLink="/ajouterproduit">
+            <i class="material-icons">add</i> Ajouter un produit
+          </button>
+        </div>
+
+        <!-- Table des produits -->
+        <div class="table-responsive" *ngIf="!loading && !error && filteredProducts.length > 0">
+          <table class="table">
+            <thead class="text-success">
+              <tr>
+                <th>Image</th>
+                <th>Titre</th>
+                <th>Prix</th>
+                <th>Description</th>
+                <th>Catégorie</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let product of filteredProducts; trackBy: trackByProductId">
+                <td>
+                  <img [src]="product.image" [alt]="product.title"
+                       class="product-image"
+                       (error)="product.image = 'assets/img/default-product.png'">
+                </td>
+                <td>{{ product.title }}</td>
+                <td>{{ product.price | currency: 'EUR' }}</td>
+                <td>
+                  <div class="description-content">{{ product.description }}</div>
+                </td>
+                <td>
+                  <span class="category-badge">{{ product.category }}</span>
+                </td>
+                <td>
+                  <button class="btn btn-just-icon btn-success btn-link"
+                          [routerLink]="['/', product.id, 'edit']"
+                          matTooltip="Modifier">
+                    <i class="material-icons">edit</i>
+                  </button>
+                  <button class="btn btn-just-icon btn-danger btn-link"
+                          (click)="openDeleteDialog(product.id)"
+                          matTooltip="Supprimer">
+                    <i class="material-icons">delete</i>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Loading Spinner -->
+        <div class="loading-spinner" *ngIf="loading">
+          <mat-spinner diameter="50"></mat-spinner>
+        </div>
+
+        <!-- Error Message -->
+        <div class="error-message" *ngIf="error">
+          {{ error }}
+        </div>
+
+        <!-- Empty State -->
+        <div class="no-products" *ngIf="!loading && !error && filteredProducts.length === 0">
+          <i class="material-icons">inventory</i>
+          <p>Aucun produit trouvé</p>
+          <button class="btn btn-success" routerLink="/ajouterproduit">Ajouter un produit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

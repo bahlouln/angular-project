@@ -1,0 +1,64 @@
+<app-navbar></app-navbar>
+<div class="container mt-5">
+    <div class="cartBox">
+        <h1 class="text-danger">Panier d'achat</h1>
+        <div class="headCart">
+            <p class="lead">Vous avez <label class="text-danger">{{cartProducts.length}}</label> articles dans votre panier</p>
+            <span class="text-danger card-header" (click)="clearCart()" style="cursor: pointer;">Vider le panier</span>
+        </div>
+        
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Nom</th>
+                        <th>Prix</th>
+                        <th>Quantité</th>
+                        <th>Total</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of cartProducts; let index=index">
+                        <td>
+                            <img [src]="item.item.image" [alt]="item.item.title" class="img-thumbnail">
+                        </td>
+                        <td>{{item.item.title}}</td>
+                        <td>{{item.item.price | currency:'EUR'}}</td>
+                        <td>
+                            <div class="quantity">
+                                <button class="btn btn-dark" (click)="minsAmount(index)">-</button>
+                                <input class="form-control" type="number" (change)="detectChange()" [(ngModel)]="item.quantity" min="1">
+                                <button class="btn btn-dark" (click)="addAmount(index)">+</button>
+                            </div>
+                        </td>
+                        <td>{{item.item.price * item.quantity | currency:'EUR'}}</td>
+                        <td>
+                            <button class="btn btn-danger" (click)="deleteProduct(index)">
+                                <i class="fas fa-trash"></i> Supprimer
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4"></td>
+                        <td><strong>Total: {{total | currency:'EUR'}}</strong></td>
+                        <td>
+                            <button class="btn btn-success" (click)="addCart()">
+                                <i class="fas fa-shopping-cart"></i> Commander
+                            </button>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <div class="alert alert-success" role="alert" *ngIf="success">
+        <strong>Félicitations !</strong> Votre commande a été envoyée avec succès.
+    </div>
+    
+</div>
+<app-footer></app-footer>
