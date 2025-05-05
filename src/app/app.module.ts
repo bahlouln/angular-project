@@ -15,8 +15,6 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './shared/header/header.component';
 import { SpinnerComponent } from './shared/spinner/spinner.component';
 import { SelectComponent } from './shared/select/select.component';
-import { CartComponent } from './carts/carts.component';
-import { AdminLayoutModule } from './layouts/admin-layout/admin-layout.module';
 import { ArticleFormComponent } from './article-form/article-form.component';
 import { ProduitsssComponent } from './administrateur/produitsss/produitsss.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -28,6 +26,10 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { NgChartsModule } from 'ng2-charts';
 import { RegisterClientComponent } from './register-client/register-client.component';
 import { LoginComponent } from './login/login.component';
+import { MatInputModule } from '@angular/material/input';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { CartComponent } from './carts/carts.component';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   imports: [
@@ -35,16 +37,16 @@ import { LoginComponent } from './login/login.component';
     NgChartsModule,
     MatDialogModule,
     MatIconModule,
-    FormsModule,
-    MatFormFieldModule,
+    FormsModule, 
+    MatFormFieldModule,MatInputModule,
     CommonModule,
     ReactiveFormsModule,
     HttpClientModule,
     ComponentsModule,
     RouterModule,
     AppRoutingModule,
-    BrowserModule,
-    AdminLayoutModule
+    BrowserModule,MatTooltipModule
+    
   ],
   declarations: [
     AppComponent,

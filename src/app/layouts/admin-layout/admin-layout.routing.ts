@@ -13,7 +13,6 @@ import { UpgradeComponent } from '../../upgrade/upgrade.component';
 
 // Client Components
 import { ProductsComponent } from '../../components/products/products.component';
-import { CartComponent } from '../../components/cart/cart.component';
 
 export const AdminLayoutRoutes: Routes = [
     // Admin routes
@@ -34,12 +33,6 @@ export const AdminLayoutRoutes: Routes = [
     { 
         path: 'products',
         component: ProductsComponent,
-        canActivate: [AuthGuard],
-        data: { requiresClient: true }
-    },
-    { 
-        path: 'cart',
-        component: CartComponent,
         canActivate: [AuthGuard],
         data: { requiresClient: true }
     },

@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { ProductsService } from '../Services/products.service';
-import { Product } from '../Modeles/products';
 import { ConfirmDialogComponent } from '../confirm-dialog/confirm-dialog.component';
+import { Product } from 'app/Modeles/products';
+import { ProductsService } from 'app/services/products.service';
+
 
 @Component({
   selector: 'app-table-list',
@@ -25,25 +26,27 @@ export class TableListComponent implements OnInit {
     this.loadProducts();
   }
 
-  loadProducts() {
+  loadProducts(): void {
     this.loading = true;
-    this.error = null;
-    
+    console.log('Chargement des produits...'); // ✅ debug: vérifier si la requête commence
     this.productsService.getProducts().subscribe({
       next: (data) => {
+        console.log('Produits récupérés:', data);  // ✅ debug
         this.products = data;
-        this.filteredProducts = [...data];
-        // Extraire les catégories uniques
-        this.categories = [...new Set(data.map(product => product.category))];//xtraire toutes les catégories uniques depuis les produits
+        this.filteredProducts = [...data]; // Assure-toi que filteredProducts est bien mis à jour
+        this.categories = [...new Set(data.map(product => product.category))];
         this.loading = false;
       },
       error: (error) => {
-        this.error = 'Erreur lors du chargement des produits. Veuillez réessayer.';
+        console.error('Erreur lors de la récupération des produits:', error);  // ✅ debug
         this.loading = false;
-        console.error('Error loading products:', error);
+        this.error = 'Erreur lors du chargement des produits.';
       }
     });
   }
+  
+  
+  
 
   filterByCategory(event: Event) {
     const category = (event.target as HTMLSelectElement).value;

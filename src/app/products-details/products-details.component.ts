@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ProductsService } from '../../Services/products.service';
+import { ProductsService } from 'app/services/products.service';
 @Component({
   selector: 'app-products-details',
   templateUrl: './products-details.component.html',

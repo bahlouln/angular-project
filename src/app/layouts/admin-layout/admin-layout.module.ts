@@ -17,7 +17,6 @@ import { UpgradeComponent } from '../../upgrade/upgrade.component';
 
 // Client Components
 import { ProductsComponent } from '../../components/products/products.component';
-import { CartComponent } from '../../components/cart/cart.component';
 
 // Material Modules
 import { MatButtonModule } from '@angular/material/button';
@@ -54,8 +53,8 @@ import { ComponentsModule } from "../../components/components.module";
     UpgradeComponent,
     
     // Client Components
-    ProductsComponent,
-    CartComponent
+    ProductsComponent
+   
   ]
 })
 export class AdminLayoutModule {}

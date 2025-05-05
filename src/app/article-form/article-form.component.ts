@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ProductsService } from 'Services/products.service';
-import { Product } from 'Modeles/products';
+import { Product } from 'app/Modeles/products';
+import { ProductsService } from 'app/services/products.service';
 
 @Component({
   selector: 'app-article-form',
@@ -65,11 +65,11 @@ export class ArticleFormComponent implements OnInit {
 
     // 4) Appel au service
     if (this.isEditMode) {
-      this.PS.UpdateProduct(this.idCourant, productData).subscribe(() => {
+      this.PS.updateProduct(this.idCourant, productData).subscribe(() => {
         this.router.navigate(['/listesproduits']);
       });
     } else {
-      this.PS.AddProduct(productData).subscribe(() => {
+      this.PS.addProduct(productData).subscribe(() => {
         this.router.navigate(['/listesproduits']);
       });
     }

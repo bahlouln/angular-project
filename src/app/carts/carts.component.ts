@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CartsService } from 'Services/carts.service';
+import { CartService } from 'app/services/cart.service';
 
 @Component({
   selector: 'app-cart',
@@ -7,7 +7,7 @@ import { CartsService } from 'Services/carts.service';
   styleUrls: ['./carts.component.css']
 })
 export class CartComponent implements OnInit{
-  constructor(private service: CartsService){}
+  constructor(private service: CartService){}
   cartProducts:any[] = [];
   total:any=0;
   success:boolean = false
@@ -54,19 +54,19 @@ export class CartComponent implements OnInit{
     }
 
   }
-  addCart(){
-    let products = this.cartProducts.map(item =>{
-      return{productId: item.item.id, quantity:item.quantity}
-    })
-    let Model={
-      userId:5 ,
-      date: new Date(),
-      products: products
-    }
-    this.service.createNewCart(Model).subscribe(res =>{
-      this.success=true
-
-    })
-    console.log(Model)
-  }
+  addCart() {
+    let items = this.cartProducts.map(item => {
+      return {
+        id: item.item.id,
+        name: item.item.name,
+        price: item.item.price,
+        quantity: item.quantity
+      };
+    });
+  
+    this.service.createNewCart(5, items).subscribe(res => {
+      this.success = true;
+      console.log('Panier créé :', res);
+    });
+  }  
 }

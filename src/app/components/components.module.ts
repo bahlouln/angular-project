@@ -14,7 +14,8 @@ import { NgModule } from '@angular/core';
   declarations: [
     FooterComponent,
     NavbarComponent,
-    SidebarComponent
+    SidebarComponent  
+    
   ],
   exports: [
     FooterComponent,

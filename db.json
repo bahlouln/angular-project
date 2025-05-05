@@ -1,21 +1,12 @@
 {
   "products": [
     {
-      "title": "hahaha",
-      "price": 90,
-      "description": "bbbbbbbbbb",
-      "category": "femme",
-      "image": "https://media.istockphoto.com/id/1129117534/photo/wrench-always-with-you-worker-set-up-electric-heating-boiler-at-home-bathroom.jpg?s=612x612&w=0&k=20&c=TNCvretiRzjbBJOO9sO1VVMEQpQ3fTQToEetzCCQyO0=",
-      "id": "1",
-      "isFavorite": false
-    },
-    {
-      "id": "3c8f",
-      "title": "fffffffff",
+      "title": "aaaaaaaaaaaaaaa",
       "price": 98,
       "description": "fffffffffffff",
       "category": "enfant",
       "image": "https://media.istockphoto.com/id/1129117534/photo/wrench-always-with-you-worker-set-up-electric-heating-boiler-at-home-bathroom.jpg?s=612x612&w=0&k=20&c=TNCvretiRzjbBJOO9sO1VVMEQpQ3fTQToEetzCCQyO0=",
+      "id": "3c8f",
       "isFavorite": false
     },
     {
@@ -43,6 +34,15 @@
       "description": "hhhhh",
       "category": "homme",
       "image": "https://media.istockphoto.com/id/2023730581/photo/medical-student-looking-at-an-x-ray-at-the-hospital.jpg?s=612x612&w=0&k=20&c=Xoa4XZkWNXc3ylaAt0BJQINCrvkPPpIeK9zvOzvIsok=",
+      "isFavorite": false
+    },
+    {
+      "id": "ab2f",
+      "title": "sirineee",
+      "price": 1000,
+      "description": "aaaaaaaaa",
+      "category": "enfant",
+      "image": "https://media.istockphoto.com/id/1058477334/photo/senior-male-worker-cutting-flower-in-drawer-in-garden.jpg?s=612x612&w=0&k=20&c=CK94QGWdq_KYilczkmnZvXsSOmQgkbPtTnHmaHz0AcQ=",
       "isFavorite": false
     }
   ],
@@ -81,6 +81,12 @@
       "id": "3909",
       "username": "nozha",
       "password": "nozha123",
+      "role": "client"
+    },
+    {
+      "id": "2f51",
+      "username": "ons",
+      "password": "ons123",
       "role": "client"
     }
   ],

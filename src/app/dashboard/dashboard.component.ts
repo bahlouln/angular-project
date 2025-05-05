@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductsService } from 'app/services/products.service';
 import { ChartOptions } from 'chart.js';
 import * as Chartist from 'chartist';
-import { ProductsService } from 'Services/products.service';
 // Si tu utilises chart.js
 // import { ChartDataset } from 'chart.js';
 
@@ -28,7 +28,7 @@ export class DashboardComponent implements OnInit {
   constructor(private PS: ProductsService) {}
 
   ngOnInit(): void {
-    this.PS.GetAllProductss().subscribe((res) => {
+    this.PS.getProducts().subscribe((res) => {
       this.NbProduits = res.length;
 
       for (let i = 0; i < res.length; i++) {
