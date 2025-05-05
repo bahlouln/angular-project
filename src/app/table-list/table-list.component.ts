@@ -34,7 +34,7 @@ export class TableListComponent implements OnInit {
         this.products = data;
         this.filteredProducts = [...data];
         // Extraire les catégories uniques
-        this.categories = [...new Set(data.map(product => product.category))];
+        this.categories = [...new Set(data.map(product => product.category))];//xtraire toutes les catégories uniques depuis les produits
         this.loading = false;
       },
       error: (error) => {
@@ -75,8 +75,8 @@ export class TableListComponent implements OnInit {
   private deleteProduct(productId: string) {
     this.productsService.deleteProduct(productId).subscribe({
       next: () => {
-        this.products = this.products.filter(p => p.id !== productId);
-        this.filteredProducts = this.filteredProducts.filter(p => p.id !== productId);
+        this.products = this.products.filter(p => p.id !== productId);//.filter(...) yefsa5 el produit supprime wy7ott el ba9iya
+        this.filteredProducts = this.filteredProducts.filter(p => p.id !== productId);///kifkif lel filteredProducts bech el suppression visible 7atta lel utilisateur 
       },
       error: (error) => {
         console.error('Error deleting product:', error);
@@ -85,7 +85,8 @@ export class TableListComponent implements OnInit {
     });
   }
 
-  trackByProductId(index: number, product: Product): string {
+  trackByProductId(index: number, product: Product): string {//Cela évite de recréer toute la liste chaque fois que quelque chose change.
+    //Cette méthode est utilisée avec *ngFor dans le template HTML pour optimiser le rendu de la liste.
     return product.id;
   }
 }
