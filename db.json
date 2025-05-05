@@ -1,48 +1,84 @@
 {
   "products": [
     {
-      "title": "aaaaaaaaaaaaaaa",
-      "price": 98,
-      "description": "fffffffffffff",
-      "category": "enfant",
-      "image": "https://media.istockphoto.com/id/1129117534/photo/wrench-always-with-you-worker-set-up-electric-heating-boiler-at-home-bathroom.jpg?s=612x612&w=0&k=20&c=TNCvretiRzjbBJOO9sO1VVMEQpQ3fTQToEetzCCQyO0=",
-      "id": "3c8f",
-      "isFavorite": false
-    },
-    {
-      "id": "0da6",
-      "title": "rrrrr",
+      "id": "68ac",
+      "title": "Pull en laine\t",
       "price": 50,
-      "description": "rrrrr",
+      "description": "Pull chaud en laine mérinos, idéal hiver.",
       "category": "homme",
-      "image": "https://media.istockphoto.com/id/1058477334/photo/senior-male-worker-cutting-flower-in-drawer-in-garden.jpg?s=612x612&w=0&k=20&c=CK94QGWdq_KYilczkmnZvXsSOmQgkbPtTnHmaHz0AcQ=",
+      "image": "https://media.istockphoto.com/id/2158176288/fr/photo/man-wearing-beige-turtleneck-sweater-winter-fashion.jpg?s=612x612&w=is&k=20&c=xf7BOkSQhjuf5uuh_gjcwDuU7CbdYh3_XaqnsfguQZA=",
       "isFavorite": false
     },
     {
-      "id": "f07c",
-      "title": "ssss",
-      "price": 16,
-      "description": "dddd",
+      "id": "59a6",
+      "title": "Blazer noir\t",
+      "price": 120,
+      "description": "Blazer classique pour un look élégant.",
       "category": "homme",
-      "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+      "image": "https://media.istockphoto.com/id/840428108/fr/photo/homme-daffaires-souriant-avec-les-mains-jointes.jpg?s=612x612&w=0&k=20&c=vSmSGPIZsccJrUH3VdpCBW5P7Hi9r7lAYOsPK52yB4M=",
       "isFavorite": false
     },
     {
-      "id": "c45f",
-      "title": "hhhhh",
-      "price": 50,
-      "description": "hhhhh",
-      "category": "homme",
-      "image": "https://media.istockphoto.com/id/2023730581/photo/medical-student-looking-at-an-x-ray-at-the-hospital.jpg?s=612x612&w=0&k=20&c=Xoa4XZkWNXc3ylaAt0BJQINCrvkPPpIeK9zvOzvIsok=",
+      "id": "3097",
+      "title": "Robe d'été fleurie\t",
+      "price": 65,
+      "description": "Robe légère à motifs fleuris, coupe évasée.",
+      "category": "femme",
+      "image": "https://media.istockphoto.com/id/2076364206/fr/photo/femme-portant-un-chapeau-et-une-robe-avec-des-fleurs-admirant-la-nature-dans-un-parc-public.jpg?s=612x612&w=0&k=20&c=P25u0k_KtN7ZxbTZRBrOCKRYP0XnWm01we7AkGIlu9Q=",
       "isFavorite": false
     },
     {
-      "id": "ab2f",
-      "title": "sirineee",
-      "price": 1000,
-      "description": "aaaaaaaaa",
+      "id": "4450",
+      "title": "Blouse satinée\t",
+      "price": 45,
+      "description": "\tBlouse fluide en satin, couleur ivoire.",
+      "category": "femme",
+      "image": "https://media.istockphoto.com/id/1396132269/fr/photo/s%C3%A9rie-studio-dimges-de-jeune-femme-en-robe-de-soie-beige.jpg?s=612x612&w=0&k=20&c=1l8bJafp7OtGzg1R6upt_M2KsyZ9eNkf27KMdEw0-RQ=",
+      "isFavorite": false
+    },
+    {
+      "id": "4c99",
+      "title": "Manteau long beige\t",
+      "price": 127,
+      "description": "Manteau en laine, coupe droite.",
+      "category": "femme",
+      "image": "https://media.istockphoto.com/id/2181755059/fr/photo/une-femme-daffaires-v%C3%AAtue-dun-long-manteau-sapproche-dun-centre-daffaires-tenant-un.jpg?s=612x612&w=0&k=20&c=ygjlXbNHhmA-8tzE3lzKyD_Q1D-Kw6DED2cSHoLXEa4=",
+      "isFavorite": false
+    },
+    {
+      "id": "d0c2",
+      "title": "T-shirt super-héros",
+      "price": 25,
+      "description": "T-shirt en coton bio avec imprimé super-héros.",
       "category": "enfant",
-      "image": "https://media.istockphoto.com/id/1058477334/photo/senior-male-worker-cutting-flower-in-drawer-in-garden.jpg?s=612x612&w=0&k=20&c=CK94QGWdq_KYilczkmnZvXsSOmQgkbPtTnHmaHz0AcQ=",
+      "image": "https://media.istockphoto.com/id/888620758/fr/photo/adorable-petit-gar%C3%A7on-faire-semblant-d%C3%AAtre-super-h%C3%A9ros.jpg?s=612x612&w=0&k=20&c=QayV-Eqbnk9gdXIFhYG0AJDa0i4Bx2MOEtHzYrh9iOY=",
+      "isFavorite": false
+    },
+    {
+      "id": "ee6b",
+      "title": "Pyjama licorne\t",
+      "price": 30,
+      "description": "Pyjama doux avec capuche licorne.",
+      "category": "enfant",
+      "image": "https://media.istockphoto.com/id/905180364/fr/photo/petite-fille-en-costume-de-licorne-avec-mobile-sur-canap%C3%A9.jpg?s=612x612&w=0&k=20&c=EUCFI7BJ39jKC75yJywPK0NU2sB4h8nkC_BFRPaPm9U=",
+      "isFavorite": false
+    },
+    {
+      "id": "3df5",
+      "title": "Pantalon jogging",
+      "price": 35,
+      "description": "Pantalon confortable pour sport ou détente.",
+      "category": "enfant",
+      "image": "https://media.istockphoto.com/id/1217621882/fr/photo/tout-le-monde-peut-aider-%C3%A0-organiser-la-maison-pendant-les-p%C3%A9riodes-dauto-isolement.jpg?s=612x612&w=0&k=20&c=8McilMZc1iVcgOMQQ4A4DYlXd3bdnxPGDCBqdizJE3Q=",
+      "isFavorite": false
+    },
+    {
+      "id": "d7ae",
+      "title": "Robe de soirée longue",
+      "price": 250,
+      "description": "Élégante robe en satin, parfaite pour les occasions.",
+      "category": "femme",
+      "image": "https://media.istockphoto.com/id/463173457/fr/photo/femme-en-rouge-tissu.jpg?s=612x612&w=0&k=20&c=xzinHJqGvmPRMSEg4xTQfi-zZUmjdoSjBmHtPXpOxCI=",
       "isFavorite": false
     }
   ],

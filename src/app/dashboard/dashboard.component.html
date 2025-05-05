@@ -1,14 +1,28 @@
-<div class="sidebar" data-color="red" data-image=""> 
+<div class="dashboard-container">
+  <div class="sidebar" data-color="red">
     <app-sidebar></app-sidebar>
-    <div class="sidebar-background" style="background-image: url(assets/img/sidebar-5.jpg)"></div>
-  </div>
-<div class="chart">
-    <canvas baseChart
-      [type]="'pie'"
-      [datasets]="chartDatapie"
-      [labels]="chartLabelspie"
-      [options]="chartOptions">
-    </canvas>
+    <div class="sidebar-background" style="background-image: url('assets/img/sidebar-5.jpg')"></div>
   </div>
 
-  
+  <div class="content">
+    <div class="chart-grid">
+      <div class="chart-card">
+        <canvas baseChart
+          [type]="'pie'"
+          [datasets]="chartDatapie"
+          [labels]="chartLabelspie"
+          [options]="chartOptions">
+        </canvas>
+      </div>
+
+      <div class="chart-card">
+        <canvas baseChart
+          [type]="'bar'"
+          [datasets]="chartDatabar"
+          [labels]="chartLabelsbar"
+          [options]="chartOptions">
+        </canvas>
+      </div>
+    </div>
+  </div>
+</div>
